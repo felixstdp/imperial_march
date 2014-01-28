@@ -1,3 +1,6 @@
+#include <imperialmarch.h>
+#include "imperialmarch.h"
+
 int speakerPin=9;
 #define c 261
 #define d 294
@@ -21,7 +24,7 @@ int speakerPin=9;
 
 void imperialmarch::imperialmarch()
 {
-  brake(0);
+  pinMode(speakerPin, OUTPUT);
   beep(speakerPin, a, 500);
   beep(speakerPin, a, 500);
   beep(speakerPin, a, 500);
@@ -108,6 +111,3 @@ void imperialmarch::beep (unsigned char speakerPin, int frequencyInHertz, long t
   }
   delay(20);
 }
-
-
-
