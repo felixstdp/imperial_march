@@ -5,6 +5,7 @@ class imperialmarch{
 
 public:
   imperialmarch();
+  void march();
   
 private:
   beep (unsigned char speakerPin, int frequencyInHertz, long timeInMiliseconds);
