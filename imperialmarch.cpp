@@ -1,7 +1,6 @@
 #include <imperialmarch.h>
 #include "imperialmarch.h"
 
-int speakerPin=9;
 #define c 261
 #define d 294
 #define e 329
@@ -22,9 +21,13 @@ int speakerPin=9;
 #define gSH 830
 #define aH 880
 
-void imperialmarch::imperialmarch()
+imperialmarch::imperialmarch(int speakerPin)
 {
   pinMode(speakerPin, OUTPUT);
+}
+
+void imperialmarch::march()
+{
   beep(speakerPin, a, 500);
   beep(speakerPin, a, 500);
   beep(speakerPin, a, 500);
