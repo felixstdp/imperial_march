@@ -8,7 +8,7 @@ public:
   void march();
   
 private:
-  beep (unsigned char speakerPin, int frequencyInHertz, long timeInMiliseconds);
+  void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMiliseconds);
   
 };
 #endif
