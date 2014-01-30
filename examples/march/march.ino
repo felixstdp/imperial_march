@@ -4,7 +4,7 @@ imperialmarch march;
 
 void setup()
 {
-  march.imperialmarch;
+  march.march();
 }
 
 void loop()
