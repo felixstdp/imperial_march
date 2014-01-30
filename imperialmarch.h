@@ -4,11 +4,12 @@
 class imperialmarch{
 
 public:
-  imperialmarch();
+  imperialmarch(int speakerPin);
   void march();
   
 private:
   void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMiliseconds);
+  int speakerPin;
   
 };
 #endif
