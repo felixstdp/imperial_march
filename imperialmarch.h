@@ -9,7 +9,7 @@ public:
   
 private:
   void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMiliseconds);
-  int speakerPin;
+  int _speakerPin;
   
 };
 #endif
